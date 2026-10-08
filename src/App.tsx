@@ -1,4 +1,5 @@
 import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
 import Section from "./components/Section";
 
 export default function App() {
@@ -6,19 +7,7 @@ export default function App() {
     <div id="top" className="min-h-screen bg-background text-foreground">
       <Navbar />
       <main>
-        {/* Hero */}
-        <section className="mx-auto flex min-h-screen max-w-6xl items-center px-6">
-          <div>
-            <p className="font-mono text-sm text-accent">Hi, my name is</p>
-            <h1 className="mt-4 font-display text-5xl font-bold tracking-tight md:text-7xl">
-              Ajeet Baghel
-            </h1>
-            <p className="mt-4 max-w-xl text-lg text-muted">
-              Software Engineer — building interactive web experiences with
-              React, TypeScript and 3D graphics.
-            </p>
-          </div>
-        </section>
+        <Hero />
 
         <Section id="about" label="About">
           <p className="text-muted">Bio and stats coming up next.</p>
