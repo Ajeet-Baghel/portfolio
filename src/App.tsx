@@ -1,5 +1,7 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import About from "./components/About";
+import TechStack from "./components/TechStack";
 import Section from "./components/Section";
 
 export default function App() {
@@ -9,13 +11,8 @@ export default function App() {
       <main>
         <Hero />
 
-        <Section id="about" label="About">
-          <p className="text-muted">Bio and stats coming up next.</p>
-        </Section>
-
-        <Section id="stack" label="Tech Stack">
-          <p className="text-muted">Categorized skills grid.</p>
-        </Section>
+        <About />
+        <TechStack />
 
         <Section id="projects" label="Projects">
           <p className="text-muted">Featured project cards.</p>
