@@ -18,6 +18,8 @@ Personal portfolio for **Ajeet Baghel** — inspired by modern animated develope
 - Asymmetric editorial layout: sticky section labels, bento project cards — not centered marquees
 - Intro: quick name/title reveal, not a terminal loading screen
 - Signature interactions: custom cursor dot, magnetic buttons, scroll progress, particle hero field
+- Cursor-tracking 3D **bull mascot** in the hero — original stylized model built from primitives
+  (inspired-by only: the reference avatar is proprietary and its repo license forbids copying)
 
 ## Sections
 
