@@ -3,6 +3,7 @@ import CustomCursor from "./components/CustomCursor";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import TechStack from "./components/TechStack";
+import Projects from "./components/Projects";
 import Section from "./components/Section";
 
 export default function App() {
@@ -16,9 +17,7 @@ export default function App() {
         <About />
         <TechStack />
 
-        <Section id="projects" label="Projects">
-          <p className="text-muted">Featured project cards.</p>
-        </Section>
+        <Projects />
 
         <Section id="experience" label="Experience">
           <p className="text-muted">Vertical timeline.</p>
