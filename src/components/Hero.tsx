@@ -1,5 +1,6 @@
 import { motion, type Variants } from "framer-motion";
 import { ArrowDown, ArrowRight } from "lucide-react";
+import BullCharacter from "./BullCharacter";
 
 const container: Variants = {
   hidden: {},
@@ -19,7 +20,7 @@ const item: Variants = {
 
 export default function Hero() {
   return (
-    <section className="relative mx-auto flex min-h-screen max-w-6xl flex-col justify-center px-6">
+    <section className="relative mx-auto grid min-h-screen max-w-6xl items-center gap-10 px-6 lg:grid-cols-[1.15fr_1fr]">
       <motion.div variants={container} initial="hidden" animate="show">
         <motion.p
           variants={item}
@@ -69,6 +70,15 @@ export default function Hero() {
             Get in touch
           </a>
         </motion.div>
+      </motion.div>
+
+      <motion.div
+        className="hidden h-[380px] lg:block"
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ delay: 0.9, duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+      >
+        <BullCharacter />
       </motion.div>
 
       <motion.a
