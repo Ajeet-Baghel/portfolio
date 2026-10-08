@@ -24,3 +24,10 @@ body {
   color: var(--color-foreground);
   -webkit-font-smoothing: antialiased;
 }
+
+/* custom cursor replaces the native pointer on precise-input devices only */
+@media (hover: hover) and (pointer: fine) {
+  * {
+    cursor: none !important;
+  }
+}

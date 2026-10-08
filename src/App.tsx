@@ -1,4 +1,5 @@
 import Navbar from "./components/Navbar";
+import CustomCursor from "./components/CustomCursor";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import TechStack from "./components/TechStack";
@@ -7,6 +8,7 @@ import Section from "./components/Section";
 export default function App() {
   return (
     <div id="top" className="min-h-screen bg-background text-foreground">
+      <CustomCursor />
       <Navbar />
       <main>
         <Hero />
