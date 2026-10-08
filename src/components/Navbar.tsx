@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
+import { profile } from "../data/profile";
+
+const linkedin = profile.socials.find((s) => s.label === "LinkedIn")!.url;
 
 const links = [
   { href: "#about", label: "About" },
@@ -50,10 +53,12 @@ export default function Navbar() {
           ))}
           <li>
             <a
-              href="#contact"
+              href={linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
               className="rounded-full border border-accent/40 px-4 py-1.5 text-sm text-accent transition-colors hover:bg-accent-soft"
             >
-              Hire me
+              Connect
             </a>
           </li>
         </ul>

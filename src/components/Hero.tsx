@@ -1,6 +1,9 @@
 import { motion, type Variants } from "framer-motion";
 import { ArrowDown, ArrowRight } from "lucide-react";
 import BullCharacter from "./BullCharacter";
+import { profile } from "../data/profile";
+
+const linkedin = profile.socials.find((s) => s.label === "LinkedIn")!.url;
 
 const container: Variants = {
   hidden: {},
@@ -64,10 +67,12 @@ export default function Hero() {
             />
           </a>
           <a
-            href="#contact"
+            href={linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center rounded-full border border-border px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:border-accent/50 hover:text-accent"
           >
-            Get in touch
+            Connect on LinkedIn
           </a>
         </motion.div>
       </motion.div>
